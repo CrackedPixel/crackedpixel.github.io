@@ -1,0 +1,31 @@
+// Navigation Styles here
+.navContainer{
+    max-width: 800px;
+    .fadeInAnim(~"5s");
+    margin: 1.5rem auto 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: bold;   
+    @media @530View{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
+
+nav{
+    @media @530View{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    &:hover{ text-decoration: underline; }
+}
