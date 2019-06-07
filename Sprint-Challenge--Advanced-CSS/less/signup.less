@@ -1,0 +1,89 @@
+.signup-area{
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    padding: 15px;
+    @media @phone{
+        padding: 2rem 2rem;
+    }
+}
+
+.subscriptionsList{
+    .flexStyle(column, nowrap);
+    align-items: center;
+    width: 100%;
+    margin: 3rem 0 1.5rem;
+    .subscriptionTitle{
+        width: 100%;
+        padding: 0.5rem 0.5rem 0.5rem 1.1rem;
+        background-color: @shuttle-gray;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        h3{
+            color: @wild-sand;
+        }
+    }
+    .subBtnSubmit{
+        a{ .noTextDeco(@wild-sand); }
+        .btnClass(@wild-sand, ~"2rem", ~"3.7rem", @btn-bg-color);
+        .btnClassMobile(100%, ~"6rem");
+        margin: 2rem 3rem 1rem auto;
+    }
+}
+
+.subTile{
+    margin: 0.5rem 0 0.5rem;
+    width: 100%;
+    border-bottom: 1px solid @border-box-signup;
+    border-right: 1px solid @border-box-signup;
+    padding: 10px;
+    .flexStyle(row, nowrap);
+    // & > *:before{
+    //     content:~"";
+    // }
+    .subRadio{
+        .signupBorderLine();
+        width: 7%;
+        .flexStyle(column, nowrap);
+        justify-content: center;
+        align-content: center;
+        .radioText{
+            font-size: 0.8rem;
+        }
+    }
+    .subType{
+        .signupBorderLine();
+        margin: 0 1rem 0 1rem;
+        width: 27%;
+        .flexStyle(column, nowrap);
+        .subTypeText{
+            font-size: 2rem;
+        }
+    }
+    .subPrice{
+        .signupBorderLine();
+        margin: 0 1rem 0 1rem;
+        width: 18%;
+        .flexStyle(column, nowrap);
+        .subPriceText{
+            font-size: 1.8rem;
+        }
+        .subPriceSale{
+            font-size: 1.6rem;
+            text-decoration: line-through;
+        }
+    }
+    .subBenefits{
+        margin-right: 1rem;
+        .flexStyle(column, nowrap);
+        width: 42%;
+        .subBenefitsText{
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        ul{
+            list-style-type: circle;
+            list-style: inside;
+        }
+    }
+}

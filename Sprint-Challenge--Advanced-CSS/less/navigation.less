@@ -1,0 +1,45 @@
+// Navigation code here
+.topNavFixed{
+    position: fixed;
+    width: 100%;
+    background-color: fade(@wild-sand, 90%);
+}
+.topNavContainer{
+    display: flex;
+    width: 100%;
+    margin: 2rem auto 0 auto;
+    flex-flow: column nowrap;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    
+    h1{
+        color: @shuttle-gray;
+        font-size: 4rem;
+    }
+    .topNav{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 1.9rem auto 1rem auto;
+        @media @phone{
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        a{
+            font-size: 1.7rem;
+            color:@shuttle-gray;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            &:hover{
+                text-decoration: underline;
+            }
+            @media @phone{
+                margin: 0;
+            }
+        }
+    }
+}

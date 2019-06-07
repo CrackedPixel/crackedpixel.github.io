@@ -1,0 +1,613 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.italic {
+  font-style: italic;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5E6164;
+  font-weight: 500;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  -webkit-animation: fadein 3s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 3s;
+  /* Internet Explorer */
+  -o-animation: fadein 3s;
+  /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293B;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.topNavFixed {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(246, 246, 246, 0.9);
+}
+.topNavContainer {
+  display: flex;
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  flex-flow: column nowrap;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+.topNavContainer h1 {
+  color: #5E6164;
+  font-size: 4rem;
+}
+.topNavContainer .topNav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1.9rem auto 1rem auto;
+}
+@media (max-width: 500px) {
+  .topNavContainer .topNav {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+.topNavContainer .topNav a {
+  font-size: 1.7rem;
+  color: #5E6164;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.topNavContainer .topNav a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .topNavContainer .topNav a {
+    margin: 0;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  padding-top: 105px;
+}
+.home .intro img {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 2px;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+  .home .space-images img:not(:first-child) {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-flow: column nowrap;
+    padding: 2rem 2rem;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  text-align: center;
+  font-size: 2rem;
+  color: #F6F6F6;
+  background-color: #22283A;
+  height: 3.7rem;
+  line-height: 3.7rem;
+  border-radius: 4px;
+  width: 100px;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  color: #F6F6F6;
+}
+.home .walk .walk-text .btn a:active,
+.home .walk .walk-text .btn a:link,
+.home .walk .walk-text .btn a:visited {
+  text-decoration: none;
+  color: #F6F6F6;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F6F6;
+  color: #22283A;
+  text-decoration: underline;
+}
+.home .walk .walk-text .btn:hover a {
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    height: 6rem;
+    line-height: 6rem;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    order: -1;
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.signup-area {
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+  padding: 15px;
+}
+@media (max-width: 500px) {
+  .signup-area {
+    padding: 2rem 2rem;
+  }
+}
+.subscriptionsList {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  margin: 3rem 0 1.5rem;
+}
+.subscriptionsList .subscriptionTitle {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 1.1rem;
+  background-color: #5E6164;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.subscriptionsList .subscriptionTitle h3 {
+  color: #F6F6F6;
+}
+.subscriptionsList .subBtnSubmit {
+  text-align: center;
+  font-size: 2rem;
+  color: #F6F6F6;
+  background-color: #22283A;
+  height: 3.7rem;
+  line-height: 3.7rem;
+  border-radius: 4px;
+  width: 100px;
+  cursor: pointer;
+  margin: 2rem 3rem 1rem auto;
+}
+.subscriptionsList .subBtnSubmit a {
+  text-decoration: none;
+  color: #F6F6F6;
+}
+.subscriptionsList .subBtnSubmit a:active,
+.subscriptionsList .subBtnSubmit a:link,
+.subscriptionsList .subBtnSubmit a:visited {
+  text-decoration: none;
+  color: #F6F6F6;
+}
+.subscriptionsList .subBtnSubmit:hover {
+  background-color: #F6F6F6;
+  color: #22283A;
+  text-decoration: underline;
+}
+.subscriptionsList .subBtnSubmit:hover a {
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .subscriptionsList .subBtnSubmit {
+    width: 100%;
+    height: 6rem;
+    line-height: 6rem;
+  }
+}
+.subTile {
+  margin: 0.5rem 0 0.5rem;
+  width: 100%;
+  border-bottom: 1px solid #dadedb;
+  border-right: 1px solid #dadedb;
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.subTile .subRadio {
+  border-right: 1px solid #dadedb;
+  width: 7%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+}
+.subTile .subRadio .radioText {
+  font-size: 0.8rem;
+}
+.subTile .subType {
+  border-right: 1px solid #dadedb;
+  margin: 0 1rem 0 1rem;
+  width: 27%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.subTile .subType .subTypeText {
+  font-size: 2rem;
+}
+.subTile .subPrice {
+  border-right: 1px solid #dadedb;
+  margin: 0 1rem 0 1rem;
+  width: 18%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.subTile .subPrice .subPriceText {
+  font-size: 1.8rem;
+}
+.subTile .subPrice .subPriceSale {
+  font-size: 1.6rem;
+  text-decoration: line-through;
+}
+.subTile .subBenefits {
+  margin-right: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 42%;
+}
+.subTile .subBenefits .subBenefitsText {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.subTile .subBenefits ul {
+  list-style-type: circle;
+  list-style: inside;
+}
+.contact-area {
+  margin: 3rem 0 5rem;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact-area form {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.contact-area form input {
+  width: 55%;
+  height: 2.5rem;
+  margin: 0.2rem;
+  border: 1px solid #dadedb;
+  padding: 1rem;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.contact-area form input::placeholder {
+  color: #b4b8b1;
+}
+@media (max-width: 500px) {
+  .contact-area form input {
+    width: 90%;
+    height: 3.5rem;
+  }
+}
+.contact-area form textarea {
+  width: 55%;
+  height: 8rem;
+  margin: 0.2rem;
+  border: 1px solid #dadedb;
+  padding: 1rem;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.contact-area form textarea::placeholder {
+  color: #b4b8b1;
+}
+@media (max-width: 500px) {
+  .contact-area form textarea {
+    width: 90%;
+  }
+}
+.contact-area form .btnSubmit {
+  padding: 0;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #F6F6F6;
+  background-color: #22283A;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 4px;
+  width: 100px;
+  cursor: pointer;
+}
+.contact-area form .btnSubmit:hover {
+  background-color: #F6F6F6;
+  color: #22283A;
+  text-decoration: underline;
+}
+.contact-area form .btnSubmit:hover a {
+  color: #22283A;
+}
+@media (max-width: 500px) {
+  .contact-area form .btnSubmit {
+    width: 90%;
+    height: 4rem;
+    line-height: 4rem;
+  }
+}
